@@ -1,10 +1,15 @@
 import React from 'react'
+import Banner from '../components/home/Banner'
+import Hero from '../components/home/Hero'
+import Footer from '../components/home/Footer'
 
 const Homepage = () => {
   return (
     <div>
-
-        <h1>Home Page</h1>
+        
+      
+        <Hero></Hero>
+        <Footer/>
       
     </div>
   )
