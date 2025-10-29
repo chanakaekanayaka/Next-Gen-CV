@@ -12,22 +12,22 @@ const Hero = () => {
             <div className="min-h-screen pb-20">
                 {/* Navbar */}
                 <nav className="z-50 flex items-center justify-between w-full py-5 px-6 md:px-16 lg:px-24 xl:px-40 text-sm">
-                    <a href="https://prebuiltui.com">
+                    <a href="https://prebuiltui.com" className='hover:scale-105  duration-300'>
                       <img src='/logo.svg' alt="logo" className='h-18 w-auto '/>
                     </a>
 
                     <div className="hidden md:flex items-center gap-8 transition duration-500 text-slate-800">
-                        <a href="#" className="hover:text-indigo-600 transition ">Home</a>
-                        <a href="#features" className="hover:text-indigo-600 transition ">Features</a>
-                        <a href="#testimonials" className="hover:text-indigo-600 transition ">Testimonials</a>
-                        <a href="#cta" className="hover:text-indigo-600 transition ">Contact</a>
+                        <a href="#" className="hover:text-indigo-600 transition hover:scale-150  duration-300">Home</a>
+                        <a href="#features" className="hover:text-indigo-600 transition hover:scale-150   duration-300 ">Features</a>
+                        <a href="#testimonials" className="hover:text-indigo-600 transition  hover:scale-150  duration-300">Testimonials</a>
+                        <a href="#cta" className="hover:text-indigo-600 transition  hover:scale-150   duration-300">Contact</a>
                     </div>
 
                     <div className="flex gap-2">
                         <Link to={'/app?state=register'} className="hidden md:block px-6 py-2 bg-indigo-500 hover:bg-indigo-700 active:scale-95 transition-all rounded-full text-white">
                             Get started
                         </Link>
-                        <Link to={'/app?state=login'} className="hidden md:block px-6 py-2 border active:scale-95 hover:bg-slate-50 transition-all rounded-full text-slate-700 hover:text-slate-900" >
+                        <Link to={'/app?state=login'} className="hidden md:block px-6 py-2 border active:scale-95 hover:bg-slate-50 transition-all rounded-full text-slate-700 hover:text-slate-900 hover:scale-110   duration-300" >
                             Login
                         </Link>
                     </div>
