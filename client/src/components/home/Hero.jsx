@@ -19,7 +19,7 @@ const Hero = () => {
                     <div className="hidden md:flex items-center gap-8 transition duration-500 text-slate-800">
                         <a href="#" className="hover:text-indigo-600 transition hover:scale-150  duration-300">Home</a>
                         <a href="#features" className="hover:text-indigo-600 transition hover:scale-150   duration-300 ">Features</a>
-                        <a href="#testimonials" className="hover:text-indigo-600 transition  hover:scale-150  duration-300">Testimonials</a>
+                        <a href="#testimonials" className="hover:text-indigo-600 transition  hover:scale-150  duration-300">Feedback</a>
                         <a href="#cta" className="hover:text-indigo-600 transition  hover:scale-150   duration-300">Contact</a>
                     </div>
 
@@ -44,7 +44,7 @@ const Hero = () => {
 
                 {/* Hero Section */}
                 <div className="relative flex flex-col items-center justify-center text-sm px-4 md:px-16 lg:px-24 xl:px-40 text-black">
-                    <div className="absolute top-28 xl:top-10 -z-10 left-1/4 size-72 sm:size-96 xl:size-120 2xl:size-132 bg-indigo-300 blur-[100px] opacity-30"></div>
+                    <div className="absolute top-28 xl:top-10 -z-10 left-1/4 size-72 sm:size-96 xl:size-120 2xl:size-132 bg-emerald-400 blur-[120px] opacity-25"></div>
 
                     {/* Avatars + Stars */}
                     <div className="flex items-center mt-24">

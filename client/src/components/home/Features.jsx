@@ -2,15 +2,15 @@ import React from 'react'
 
 const Features = () => {
   return (
-    <div>
+    <div className=''>
 
-        <div className=''>
+        <div className='py-[50px] '>
            
             <h1 className="text-3xl font-semibold text-center mx-auto ">Powerful Features</h1>
             <p className="text-sm text-slate-500 text-center mt-2 max-w-md mx-auto">Everything you need to create, customize, and elevate your professional CV — faster and smarter with AI.</p>
             
-            <div className="flex items-center justify-center flex-wrap gap-6 mt-20 px-4 md:px-0 ">
-                <div className="flex flex-col text-center items-center justify-center rounded-xl p-6 border border-violet-200 gap-6 max-w-sm hover:bg-blue-200 hover:scale-105  duration-300">
+            <div className="flex items-center justify-center flex-wrap gap-6 mt-20 px-4 md:px-0  ">
+                <div className=" flex flex-col text-center items-center justify-center  rounded-xl p-6  border border-violet-200 gap-6 max-w-sm hover:bg-blue-200 hover:scale-105  duration-300">
                    <img src='resume.svg' className='w-18 hover:rotate-8'/>
                     <div className="space-y-2">
                         <h3 className="text-base font-semibold text-slate-700">AI-Powered Resume Builder</h3>
