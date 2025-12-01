@@ -3,6 +3,8 @@ import { Link, useParams } from 'react-router-dom'
 import { dummyResumeData } from '../assets/assets'
 import { ArrowLeftIcon, Briefcase, ChevronLeft, ChevronRight, FileText, FolderIcon, GraduationCap, Sparkle, Sparkles, User } from 'lucide-react'
 import PersonalInfoForm from '../components/PersonalInfoForm'
+import ResumePreview from '../components/ResumePreview'
+import TemplateSelector from '../components/TemplateSelector'
 
 const NextGen = () => {
 
@@ -80,7 +82,11 @@ const NextGen = () => {
 
                   {/*Section navigation*/}
                   <div className='flex justify-between items-center mb-6 border-b border-gray-400 py-1'>
-                    <div></div>
+                  {/*template selector button*/}
+                    <div className='flex justify-between items-center mb-6 border-b border-gray-300 py-1'>
+                      <TemplateSelector selectedTemplate={resumeData.template} onChange={(template)=>setResumeData(prev =>({...prev, template}))}/>
+                    </div>
+
                     <div className='flex items-center'>
                       {activeSectionIndex !=0 &&(
 
@@ -125,6 +131,7 @@ const NextGen = () => {
               </div>
 
               {/*reume preview*/}
+              <ResumePreview data={resumeData} template={resumeData.template} accentColor={resumeData.accent_color}/>
 
              </div>
           </div>
