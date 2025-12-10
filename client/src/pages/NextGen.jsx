@@ -7,6 +7,7 @@ import ResumePreview from '../components/ResumePreview'
 import TemplateSelector from '../components/TemplateSelector'
 import ColourPicker from '../components/ColourPicker'
 import ProfessionalSummaryForm from '../components/ProfessionalSummaryForm'
+import ExperienceForm from '../components/ExperienceForm'
 
 const NextGen = () => {
 
@@ -115,15 +116,22 @@ const NextGen = () => {
 
                    {/*Form content*/} 
                    <div className='space-y-6'>
+                    {/*personal info*/}
                     {activeSection.id === 'personal' && (
                       <PersonalInfoForm data={resumeData.personal_info} onChange={(data)=>setResumeData(prev =>({...prev, personal_info:data}))}
                       removeBackground={removeBackground}
                       setRemoveBackground={setRemoveBackground}/>
                     )}
+                    {/*professional summary*/}
                     {activeSection.id === 'summary' &&(
                       <ProfessionalSummaryForm data={resumeData.professional_summary} onChange={
                         (data)=>setResumeData(prev=>({...prev,professional_summary:data}))
                       } setResumeData={setResumeData}/>
+                    )}
+                    {/*Experience*/}
+                     {activeSection.id === 'experience' &&(
+                      <ExperienceForm data={resumeData.experience} onChange={
+                        (data)=>setResumeData(prev=>({...prev, experience:data}))} />
                     )}
                    </div>      
 
