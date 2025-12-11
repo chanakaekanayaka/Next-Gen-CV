@@ -8,6 +8,7 @@ import TemplateSelector from '../components/TemplateSelector'
 import ColourPicker from '../components/ColourPicker'
 import ProfessionalSummaryForm from '../components/ProfessionalSummaryForm'
 import ExperienceForm from '../components/ExperienceForm'
+import EducationalForm from '../components/EducationalForm'
 
 const NextGen = () => {
 
@@ -132,6 +133,10 @@ const NextGen = () => {
                      {activeSection.id === 'experience' &&(
                       <ExperienceForm data={resumeData.experience} onChange={
                         (data)=>setResumeData(prev=>({...prev, experience:data}))} />
+                    )}
+                     {activeSection.id === 'education' &&(
+                      <EducationalForm data={resumeData.education} onChange={
+                        (data)=>setResumeData(prev=>({...prev, education:data}))} />
                     )}
                    </div>      
 
