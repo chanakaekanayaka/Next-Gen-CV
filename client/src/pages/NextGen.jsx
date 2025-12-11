@@ -10,6 +10,7 @@ import ProfessionalSummaryForm from '../components/ProfessionalSummaryForm'
 import ExperienceForm from '../components/ExperienceForm'
 import EducationalForm from '../components/EducationalForm'
 import ProjectForm from '../components/ProjectForm'
+import SkillsForm from '../components/SkillsForm'
 
 const NextGen = () => {
 
@@ -143,7 +144,17 @@ const NextGen = () => {
                       <ProjectForm data={resumeData.project} onChange={
                         (data)=>setResumeData(prev=>({...prev, project:data}))} />
                     )}
-                   </div>      
+                    {activeSection.id === 'skills' &&(
+                      <SkillsForm data={resumeData.skills} onChange={
+                        (data)=>setResumeData(prev=>({...prev, skills:data}))} />
+                    )}
+                    
+                   </div>    
+
+                   <button className='bg-gradient-to-br from-blue-100 to-blue-500 ring-blue-500
+                   text-blue-900 ring hover:ring-black transition-all rounded-md px-6 py-2
+                   mt-6 text-sm'>
+                    Save Changes</button>  
 
               </div>
 
