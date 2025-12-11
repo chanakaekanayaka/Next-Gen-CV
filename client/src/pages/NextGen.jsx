@@ -9,6 +9,7 @@ import ColourPicker from '../components/ColourPicker'
 import ProfessionalSummaryForm from '../components/ProfessionalSummaryForm'
 import ExperienceForm from '../components/ExperienceForm'
 import EducationalForm from '../components/EducationalForm'
+import ProjectForm from '../components/ProjectForm'
 
 const NextGen = () => {
 
@@ -137,6 +138,10 @@ const NextGen = () => {
                      {activeSection.id === 'education' &&(
                       <EducationalForm data={resumeData.education} onChange={
                         (data)=>setResumeData(prev=>({...prev, education:data}))} />
+                    )}
+                     {activeSection.id === 'projects' &&(
+                      <ProjectForm data={resumeData.project} onChange={
+                        (data)=>setResumeData(prev=>({...prev, project:data}))} />
                     )}
                    </div>      
 
