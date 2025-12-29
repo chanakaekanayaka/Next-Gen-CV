@@ -1,7 +1,12 @@
 import React from 'react'
-import { login } from '../app/features/authSlice'
+import { login } from '../app/features/authSlice.js'
+import toast from 'react-hot-toast'
+import api from '../configs/api.js'
+import { useDispatch } from 'react-redux'
+
 
 const Login = () => {
+    const dispatch = useDispatch()
    const query = new URLSearchParams(window.location.search)
    const urlState = query.get('state')
    const [state, setState] = React.useState(urlState ||"login")
@@ -16,12 +21,13 @@ const Login = () => {
         e.preventDefault()
 
         try {
-            const {data} = await api.post(`/api/users/${state}`,formData)
-            dispatchEvent(login(data))
+            const {data} = await api.post(`/api/users/${state}`, formData)
+            dispatch(login(data))
             localStorage.setItem('token', data.token)
+            toast.success(data.message)
             
         } catch (error) {
-            
+            toast(error?.response?.data?.message || error.message)
         }
 
     }
