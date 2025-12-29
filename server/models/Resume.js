@@ -42,7 +42,7 @@ const ResumeSchema = new mongoose.Schema({
             degree:{type:String},
             field:{type:String},
             graduation_date:{type:String},
-            date:{type:String},
+            gpa:{type:String},
             
         }
     ],
@@ -52,3 +52,5 @@ const ResumeSchema = new mongoose.Schema({
 
 const Resume = mongoose.model('Resume',ResumeSchema)
 export default Resume
+
+
