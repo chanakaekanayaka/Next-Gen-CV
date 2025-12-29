@@ -1,4 +1,5 @@
 import React from 'react'
+import { login } from '../app/features/authSlice'
 
 const Login = () => {
    const query = new URLSearchParams(window.location.search)
@@ -13,6 +14,15 @@ const Login = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+
+        try {
+            const {data} = await api.post(`/api/users/${state}`,formData)
+            dispatchEvent(login(data))
+            localStorage.setItem('token', data.token)
+            
+        } catch (error) {
+            
+        }
 
     }
 
