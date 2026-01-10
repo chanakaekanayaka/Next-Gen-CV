@@ -50,15 +50,7 @@
     cd Next-Gen-CV
     ```
 
-2.  **Environment Setup:**
-    Create a `.env` file in the root and server directories and add your credentials:
-    ```env
-    MONGODB_URI=your_mongodb_connection_string
-    FIREBASE_API_KEY=your_firebase_key
-    IMAGEKIT_PUBLIC_KEY=your_imagekit_public_key
-    IMAGEKIT_PRIVATE_KEY=your_imagekit_private_key
-    IMAGEKIT_URL_ENDPOINT=your_imagekit_url
-    ```
+
 
 3.  **Install Dependencies & Run:**
     ```bash
@@ -79,15 +71,6 @@ The application uses **React** for the frontend, communicating via **Axios** wit
 
 ---
 
-## 🤝 Contributing
-
-1.  **Fork** the Project.
-2.  Create your **Feature Branch** (`git checkout -b feature/AmazingFeature`).
-3.  **Commit** your Changes (`git commit -m 'Add some AmazingFeature'`).
-4.  **Push** to the Branch (`git push origin feature/AmazingFeature`).
-5.  Open a **Pull Request**.
-
----
 
 ## 👤 Author
 
@@ -97,6 +80,4 @@ The application uses **React** for the frontend, communicating via **Axios** wit
 
 ---
 
-## 📄 License
 
-Distributed under the MIT License.
