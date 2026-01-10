@@ -10,14 +10,17 @@
 
 ## 📸 Project Gallery
 
-| Home Page | Dashboard |
-| :---: | :---: |
-| ![Home](./client/public/Home.png) | ![Dashboard](./client/public/Dashboard.png) |
+<div align="center">
+  <h3>Home & Dashboard</h3>
+  <img src="client/public/Home.png" width="450" alt="Home Page" />
+  <img src="client/public/Dashboard.png" width="450" alt="Dashboard" />
+</div>
 
-### How it works
+### 🛠️ Process Workflow
+
 | Step 1: Initialize | Step 2: Customization | Contact & Support |
 | :---: | :---: | :---: |
-| ![Step 1](./client/public/step1.png) | ![Step 2](./client/public/step2.png) | ![Contact](./client/public/contact.png) |
+| <img src="client/public/step1.png" width="280" /> | <img src="client/public/step1.png" width="280" /> | <img src="client/public/contact.png" width="280" /> |
 
 ---
 
@@ -58,39 +61,6 @@
 ### Installation
 
 1. **Clone the repository:**
-    ```bash
-    git clone [https://github.com/chanakaekanayaka/Next-Gen-CV.git](https://github.com/chanakaekanayaka/Next-Gen-CV.git)
-    cd Next-Gen-CV
-    ```
-
-2. **Install Dependencies & Run:**
-    ```bash
-    # Install for Client and Server
-    npm install
-    cd client && npm install
-
-    # Run Development Server
-    npm run dev
-    ```
-
----
-
-## 🏗️ Architecture
-
-
-
-The application uses **React** for the frontend, communicating via **Axios** with an **Express** server. **MongoDB** stores the JSON structure of the CVs, while **ImageKit** handles the heavy lifting of image transformation and delivery.
-
----
-
-## 👤 Author
-
-**Chanaka Ekanayaka**
-* **GitHub:** [@chanakaekanayaka](https://github.com/chanakaekanayaka)
-* **Project Link:** [https://next-gen-cv-cmwu-f.vercel.app/](https://next-gen-cv-cmwu-f.vercel.app/)
-
----
-
-## 📄 License
-
-Distributed under the MIT License.
+   ```bash
+   git clone [https://github.com/chanakaekanayaka/Next-Gen-CV.git](https://github.com/chanakaekanayaka/Next-Gen-CV.git)
+   cd Next-Gen-CV
