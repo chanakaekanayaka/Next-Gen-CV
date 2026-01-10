@@ -4,37 +4,48 @@ import { Link, useNavigate } from 'react-router-dom'
 import { logout } from '../app/features/authSlice'
 
 const Navbar = () => {
-    const {user} = useSelector(state=> state.auth)
+    const { user } = useSelector(state => state.auth)
     const dispatch = useDispatch()
-
     const navigate = useNavigate()
 
-    const logoutuser = ()=>{
+    const logoutuser = () => {
         navigate('/')
         dispatch(logout())
     }
 
-  return (
-    <div className='shadow  from-[#7DD3FC] to-[#C4B5FD]  text-[#1E293B] '>
-        <nav className='flex items-center justify-between max-w-8xl mx-auto px-6 py-3.5 text-slate-800 transition-all'>
-            <Link to='/'> 
-                <img src='/logo.svg' alt='logo' className='h-15 w-auto mt-3 hover:scale-105  duration-300'></img>
+    return (
+        <div className='sticky top-0 z-[100] w-full border-b border-slate-200/60 bg-white/80 backdrop-blur-md shadow-sm transition-all duration-300'>
+            <nav className='flex items-center justify-between max-w-7xl mx-auto px-6 py-4'>
+                {/* Logo Section */}
+                <Link to='/' className='flex items-center transition-transform hover:scale-105 active:scale-95 duration-300'>
+                    <img 
+                        src='/logo.svg' 
+                        alt='logo' 
+                        className='h-20 w-50' 
+                    />
+                </Link>
 
-            </Link>
-           
-            <div className='flex items-center gap-4 ml-auto'>
-                <p className='hidden sm:block font-medium text-slate-800'>Hi , <span className='text-amber-950'>{user?.name}</span></p>
-                <button onClick={logoutuser} className='px-6 py-2 border bg-red-400 active:scale-95 hover:bg-red-600 transition-all rounded-full text-slate-700 hover:scale-110 hover:text-amber-50 duration-300'>
-                    Logout
-                </button>
-            </div>
+                {/* User Actions */}
+                <div className='flex items-center gap-6 ml-auto'>
+                    <div className='hidden sm:flex flex-col items-end'>
+                        <p className='text-xs text-slate-500 font-semibold uppercase tracking-wider'>Logged in as</p>
+                        <p className='font-bold text-slate-800 leading-tight'>
+                            {user?.name || 'User'}
+                        </p>
+                    </div>
 
-        </nav>
+                    <div className='h-8 w-[1px] bg-slate-200 hidden sm:block'></div>
 
-
-
-    </div>
-  )
+                    <button 
+                        onClick={logoutuser} 
+                        className='px-6 py-2.5 bg-rose-50 text-rose-600 font-semibold rounded-xl border border-rose-100 hover:bg-rose-600 hover:text-white hover:border-rose-600 hover:shadow-lg hover:shadow-rose-200 active:scale-95 transition-all duration-300 cursor-pointer'
+                    >
+                        Logout
+                    </button>
+                </div>
+            </nav>
+        </div>
+    )
 }
 
 export default Navbar
