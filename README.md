@@ -1,30 +1,35 @@
-# 🚀 Next-Gen-CV
+# 🚀 Next-Gen-CV (Full-Stack)
 
-**Next-Gen-CV** is a modern, high-performance resume-building platform designed to help job seekers create professional, ATS-friendly resumes in minutes. Built with cutting-edge web technologies, it offers a seamless user experience and sleek, responsive designs.
+**Next-Gen-CV** is a powerful, full-stack resume-building platform that allows users to create, manage, and store professional CVs. Built using the **MERN Stack**, it features secure authentication, cloud image hosting, and a seamless live-editing experience.
 
 [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen.svg)](https://next-gen-cv-cmwu-f.vercel.app/)
-[![Next.js](https://img.shields.io/badge/Built%20with-Next.js-black)](https://nextjs.org/)
-[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-blue)](https://vercel.com/)
+[![MERN Stack](https://img.shields.io/badge/Stack-MERN-blue)](https://www.mongodb.com/mern-stack)
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black)](https://vercel.com/)
 
 ---
 
 ## ✨ Features
 
-* **Live Preview:** See changes in real-time as you type.
-* **Modern Templates:** Professionally designed templates that follow current hiring trends.
-* **ATS-Optimized:** Ensures your resume passes through automated screening systems.
-* **PDF Export:** High-quality PDF generation for easy sharing and printing.
-* **Responsive Design:** Create and edit your CV on any device—mobile, tablet, or desktop.
-* **Customizable Sections:** Easily add, remove, or reorder sections like Experience, Education, and Skills.
+* **Real-time Live Preview:** Instantly see changes as you build your CV.
+* **Secure Authentication:** Firebase-powered user login and registration.
+* **Cloud Image Hosting:** High-performance profile picture uploads via ImageKit.io.
+* **Database Persistence:** Save and edit your resumes anytime with MongoDB.
+* **Modern Templates:** Clean, professional designs built with Tailwind CSS.
+* **Export to PDF:** Download your completed CV in high-quality PDF format.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Frontend:** [React.js](https://reactjs.org/), [Next.js](https://nextjs.org/)
-* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-* **Components:** [Shadcn/UI](https://ui.shadcn.com/) (if applicable)
-* **Deployment:** [Vercel](https://vercel.com/)
+### Frontend
+* **React.js:** UI components and state management.
+* **Tailwind CSS:** Modern, responsive styling.
+* **Firebase Auth:** Secure user authentication.
+
+### Backend
+* **Node.js & Express.js:** Scalable server-side logic and REST APIs.
+* **MongoDB:** NoSQL database for storing user profiles and CV data.
+* **ImageKit.io:** Image optimization and cloud storage for profile photos.
 
 ---
 
@@ -32,8 +37,10 @@
 
 ### Prerequisites
 
-* Node.js (v18 or higher)
-* npm or yarn
+* Node.js (v18+)
+* MongoDB Account (Atlas or Local)
+* Firebase Project Credentials
+* ImageKit.io API Keys
 
 ### Installation
 
@@ -43,32 +50,36 @@
     cd Next-Gen-CV
     ```
 
-2.  **Install dependencies:**
-    ```bash
-    npm install
+2.  **Environment Setup:**
+    Create a `.env` file in the root and server directories and add your credentials:
+    ```env
+    MONGODB_URI=your_mongodb_connection_string
+    FIREBASE_API_KEY=your_firebase_key
+    IMAGEKIT_PUBLIC_KEY=your_imagekit_public_key
+    IMAGEKIT_PRIVATE_KEY=your_imagekit_private_key
+    IMAGEKIT_URL_ENDPOINT=your_imagekit_url
     ```
 
-3.  **Run the development server:**
+3.  **Install Dependencies & Run:**
     ```bash
+    # Install for Client and Server
+    npm install
+    cd client && npm install
+
+    # Run Development Server
     npm run dev
     ```
 
-4.  **Open your browser:**
-    Go to `http://localhost:3000` to see the application in action.
-
 ---
 
-## 📸 Screenshots
+## 🏗️ Architecture
 
-| Dashboard | CV Builder |
-| :--- | :--- |
-| ![Home Page](https://via.placeholder.com/400x225?text=Landing+Page) | ![Editor](https://via.placeholder.com/400x225?text=CV+Editor+Interface) |
+
+The application uses **React** for the frontend, communicating via **Axios** with an **Express** server. **MongoDB** stores the JSON structure of the CVs, while **ImageKit** handles the heavy lifting of image transformation and delivery.
 
 ---
 
 ## 🤝 Contributing
-
-Contributions are welcome! If you'd like to improve the project:
 
 1.  **Fork** the Project.
 2.  Create your **Feature Branch** (`git checkout -b feature/AmazingFeature`).
@@ -82,13 +93,10 @@ Contributions are welcome! If you'd like to improve the project:
 
 **Chanaka Ekanayaka**
 * GitHub: [@chanakaekanayaka](https://github.com/chanakaekanayaka)
-* Live Site: [Next-Gen-CV](https://next-gen-cv-cmwu-f.vercel.app/)
+* Project Link: [https://next-gen-cv-cmwu-f.vercel.app/](https://next-gen-cv-cmwu-f.vercel.app/)
 
 ---
 
 ## 📄 License
 
 Distributed under the MIT License.
-
----
-*Built with ❤️ to help people land their dream jobs.*
