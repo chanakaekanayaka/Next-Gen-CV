@@ -8,6 +8,14 @@
 
 ---
 
+## 📸 Project Preview
+
+| Platform Overview | Interface Element |
+| :--- | :--- |
+| ![Main Screenshot](./Screenshot%202025-12-21%20101...) | ![Email Feature](./client/public/email.png) |
+
+---
+
 ## ✨ Features
 
 * **Real-time Live Preview:** Instantly see changes as you build your CV.
@@ -44,40 +52,7 @@
 
 ### Installation
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/chanakaekanayaka/Next-Gen-CV.git](https://github.com/chanakaekanayaka/Next-Gen-CV.git)
-    cd Next-Gen-CV
-    ```
-
-
-
-3.  **Install Dependencies & Run:**
-    ```bash
-    # Install for Client and Server
-    npm install
-    cd client && npm install
-
-    # Run Development Server
-    npm run dev
-    ```
-
----
-
-## 🏗️ Architecture
-
-
-The application uses **React** for the frontend, communicating via **Axios** with an **Express** server. **MongoDB** stores the JSON structure of the CVs, while **ImageKit** handles the heavy lifting of image transformation and delivery.
-
----
-
-
-## 👤 Author
-
-**Chanaka Ekanayaka**
-* GitHub: [@chanakaekanayaka](https://github.com/chanakaekanayaka)
-* Project Link: [https://next-gen-cv-cmwu-f.vercel.app/](https://next-gen-cv-cmwu-f.vercel.app/)
-
----
-
-
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/chanakaekanayaka/Next-Gen-CV.git](https://github.com/chanakaekanayaka/Next-Gen-CV.git)
+   cd Next-Gen-CV
