@@ -88,6 +88,7 @@ The application uses **React** for the frontend, communicating via **Axios** wit
 **Chanaka Ekanayaka**
 * **GitHub:** [@chanakaekanayaka](https://github.com/chanakaekanayaka)
 * **Project Link:** [https://next-gen-cv-cmwu-f.vercel.app/](https://next-gen-cv-cmwu-f.vercel.app/)
+* **LinkedIn:** [LinkedIn-chanaka](www.linkedin.com/in/chanaka-ekanayaka-8a4b94378)
 
 ---
 
