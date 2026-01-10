@@ -92,8 +92,6 @@ The application uses **React** for the frontend, communicating via **Axios** wit
 
 
 
----
 
-## 📄 License
 
-Distributed under the MIT License.
+
