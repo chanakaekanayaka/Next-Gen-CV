@@ -6,7 +6,8 @@ const Features = () => {
             <div className='max-w-7xl mx-auto'>
                 {/* Header Section */}
                 <div className="text-center mb-20">
-                    <span className="text-indigo-600 text-sm font-bold uppercase tracking-widest px-4 py-1.5 bg-indigo-50 rounded-full">
+                    <span className="text-indigo-600 text-sm font-bold uppercase tracking-widest 
+                    px-4 py-1.5 bg-indigo-50 rounded-full">
                         Features
                     </span>
                     <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mt-6 tracking-tight">
@@ -20,8 +21,11 @@ const Features = () => {
                 {/* Features Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {/* AI Powered Builder */}
-                    <div className="group relative flex flex-col items-center text-center p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-indigo-100 hover:border-indigo-200 transition-all duration-300 hover:-translate-y-2">
-                        <div className="w-20 h-20 bg-violet-50 rounded-2xl flex items-center justify-center mb-8 group-hover:rotate-6 transition-transform duration-300">
+                    <div className="group relative flex flex-col items-center text-center p-8
+                     bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl
+                      hover:shadow-indigo-100 hover:border-indigo-200 transition-all duration-300 hover:-translate-y-2">
+                        <div className="w-20 h-20 bg-violet-50 rounded-2xl flex items-center 
+                        justify-center mb-8 group-hover:rotate-6 transition-transform duration-300">
                             <img src='resume.svg' className='w-12 h-12' alt="Resume Icon"/>
                         </div>
                         <h3 className="text-xl font-bold text-slate-800 mb-3">AI-Powered Resume Builder</h3>
@@ -31,8 +35,11 @@ const Features = () => {
                     </div>
 
                     {/* Smart Customization */}
-                    <div className="group relative flex flex-col items-center text-center p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-emerald-100 hover:border-emerald-200 transition-all duration-300 hover:-translate-y-2">
-                        <div className="w-20 h-20 bg-emerald-50 rounded-2xl flex items-center justify-center mb-8 group-hover:rotate-6 transition-transform duration-300">
+                    <div className="group relative flex flex-col items-center text-center p-8
+                     bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl
+                      hover:shadow-emerald-100 hover:border-emerald-200 transition-all duration-300 hover:-translate-y-2">
+                        <div className="w-20 h-20 bg-emerald-50 rounded-2xl flex items-center 
+                        justify-center mb-8 group-hover:rotate-6 transition-transform duration-300">
                             <img src='customization.svg' className='w-12 h-12' alt="Customization Icon"/>
                         </div>
                         <h3 className="text-xl font-bold text-slate-800 mb-3">Smart Customization</h3>
@@ -42,8 +49,11 @@ const Features = () => {
                     </div>
 
                     {/* Instant Export */}
-                    <div className="group relative flex flex-col items-center text-center p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-orange-100 hover:border-orange-200 transition-all duration-300 hover:-translate-y-2">
-                        <div className="w-20 h-20 bg-orange-50 rounded-2xl flex items-center justify-center mb-8 group-hover:rotate-6 transition-transform duration-300">
+                    <div className="group relative flex flex-col items-center text-center p-8
+                     bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl
+                      hover:shadow-orange-100 hover:border-orange-200 transition-all duration-300 hover:-translate-y-2">
+                        <div className="w-20 h-20 bg-orange-50 rounded-2xl flex items-center 
+                        justify-center mb-8 group-hover:rotate-6 transition-transform duration-300">
                             <img src='pdf.svg' className='w-12 h-12' alt="PDF Icon"/>
                         </div>
                         <h3 className="text-xl font-bold text-slate-800 mb-3">Instant PDF Export</h3>
@@ -53,8 +63,11 @@ const Features = () => {
                     </div>
 
                     {/* Real-Time Preview */}
-                    <div className="group relative flex flex-col items-center text-center p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-blue-100 hover:border-blue-200 transition-all duration-300 hover:-translate-y-2">
-                        <div className="w-20 h-20 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 group-hover:rotate-6 transition-transform duration-300">
+                    <div className="group relative flex flex-col items-center text-center p-8
+                     bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl
+                      hover:shadow-blue-100 hover:border-blue-200 transition-all duration-300 hover:-translate-y-2">
+                        <div className="w-20 h-20 bg-blue-50 rounded-2xl flex items-center 
+                        justify-center mb-8 group-hover:rotate-6 transition-transform duration-300">
                             <img src='realtime.svg' className='w-12 h-12' alt="Realtime Icon"/>
                         </div>
                         <h3 className="text-xl font-bold text-slate-800 mb-3">Real-Time Preview</h3>
@@ -64,8 +77,11 @@ const Features = () => {
                     </div>
 
                     {/* Data Security */}
-                    <div className="group relative flex flex-col items-center text-center p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-rose-100 hover:border-rose-200 transition-all duration-300 hover:-translate-y-2 lg:col-span-1">
-                        <div className="w-20 h-20 bg-rose-50 rounded-2xl flex items-center justify-center mb-8 group-hover:rotate-6 transition-transform duration-300">
+                    <div className="group relative flex flex-col items-center text-center p-8
+                     bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl
+                      hover:shadow-rose-100 hover:border-rose-200 transition-all duration-300 hover:-translate-y-2 lg:col-span-1">
+                        <div className="w-20 h-20 bg-rose-50 rounded-2xl flex items-center 
+                        justify-center mb-8 group-hover:rotate-6 transition-transform duration-300">
                             <img src='security.svg' className='w-12 h-12' alt="Security Icon"/>
                         </div>
                         <h3 className="text-xl font-bold text-slate-800 mb-3">Data Privacy & Security</h3>
@@ -74,9 +90,12 @@ const Features = () => {
                         </p>
                     </div>
 
-                    {/* ATS Optimization (New Addition Suggestion) */}
-                    <div className="group relative flex flex-col items-center text-center p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-indigo-100 hover:border-indigo-200 transition-all duration-300 hover:-translate-y-2">
-                        <div className="w-20 h-20 bg-indigo-50 rounded-2xl flex items-center justify-center mb-8 group-hover:rotate-6 transition-transform duration-300">
+                    
+                    <div className="group relative flex flex-col items-center text-center p-8
+                     bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl
+                      hover:shadow-indigo-100 hover:border-indigo-200 transition-all duration-300 hover:-translate-y-2">
+                        <div className="w-20 h-20 bg-indigo-50 rounded-2xl flex items-center 
+                        justify-center mb-8 group-hover:rotate-6 transition-transform duration-300">
                             <Zap className="text-indigo-600 size-10" /> {/* Reusing Lucide Zap for impact */}
                         </div>
                         <h3 className="text-xl font-bold text-slate-800 mb-3">ATS-Friendly Layouts</h3>

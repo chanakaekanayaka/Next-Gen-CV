@@ -29,7 +29,7 @@ export const getResumeById = async (req, res) => {
     const userId = req.userId;
     const { resumeId } = req.params;
 
-    // FIXED: Changed _Id to _id (Mongoose is case-sensitive)
+   
     const resume = await Resume.findOne({ userId, _id: resumeId })
 
     if (!resume) {

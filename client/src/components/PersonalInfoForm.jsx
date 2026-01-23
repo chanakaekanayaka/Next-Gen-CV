@@ -34,14 +34,18 @@ const PersonalInfoForm = ({ data, onChange, removeBackground, setRemoveBackgroun
                                     ? data.image
                                     : URL.createObjectURL(data.image)}
                                 alt="user-image"
-                                className="w-20 h-20 rounded-full object-cover ring-4 ring-white shadow-md group-hover:opacity-90 transition-all"
+                                className="w-20 h-20 rounded-full object-cover ring-4
+                                 ring-white shadow-md group-hover:opacity-90 transition-all"
                             />
-                            <div className="absolute inset-0 flex items-center justify-center bg-black/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div className="absolute inset-0 flex items-center justify-center
+                             bg-black/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
                                 <Camera className="text-white size-6" />
                             </div>
                         </div>
                     ) : (
-                        <div className='flex flex-col items-center justify-center w-20 h-20 bg-white border-2 border-dashed border-slate-300 rounded-full text-slate-400 group-hover:border-indigo-500 group-hover:text-indigo-500 transition-all'>
+                        <div className='flex flex-col items-center justify-center w-20 h-20
+                         bg-white border-2 border-dashed border-slate-300 rounded-full
+                          text-slate-400 group-hover:border-indigo-500 group-hover:text-indigo-500 transition-all'>
                             <User className='size-8' />
                         </div>
                     )}
@@ -61,8 +65,10 @@ const PersonalInfoForm = ({ data, onChange, removeBackground, setRemoveBackgroun
                                     checked={removeBackground}
                                     onChange={() => setRemoveBackground(!removeBackground)}
                                 />
-                                <div className="w-10 h-5 bg-slate-200 rounded-full peer peer-checked:bg-indigo-600 transition-all duration-300"></div>
-                                <div className="absolute left-1 top-1 w-3 h-3 bg-white rounded-full transition-transform duration-300 peer-checked:translate-x-5"></div>
+                                <div className="w-10 h-5 bg-slate-200 rounded-full peer
+                                 peer-checked:bg-indigo-600 transition-all duration-300"></div>
+                                <div className="absolute left-1 top-1 w-3 h-3 bg-white 
+                                rounded-full transition-transform duration-300 peer-checked:translate-x-5"></div>
                             </label>
                             <span className="text-sm font-medium text-slate-600">Remove Background</span>
                         </div>
@@ -76,7 +82,8 @@ const PersonalInfoForm = ({ data, onChange, removeBackground, setRemoveBackgroun
                     const Icon = field.icon;
 
                     return (
-                        <div key={field.key} className={`space-y-1.5 ${field.key === 'full_name' || field.key === 'email' ? 'md:col-span-1' : ''}`}>
+                        <div key={field.key} className={`space-y-1.5 ${field.key === 'full_name' || field.key === 'email' ? 
+                        'md:col-span-1' : ''}`}>
                             <label className='flex items-center gap-2 text-sm font-semibold text-slate-700'>
                                 <Icon className='size-4 text-slate-400' />
                                 {field.label}
@@ -86,14 +93,17 @@ const PersonalInfoForm = ({ data, onChange, removeBackground, setRemoveBackgroun
                                 type={field.type}
                                 value={data[field.key] || ""}
                                 onChange={(e) => handleChange(field.key, e.target.value)}
-                                className='w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-slate-800 text-sm placeholder:text-slate-400 focus:bg-white focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 outline-none transition-all duration-200'
+                                className='w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl
+                                 text-slate-800 text-sm placeholder:text-slate-400 focus:bg-white
+                                  focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 outline-none 
+                                  transition-all duration-200'
                                 placeholder={`e.g. ${field.label === 'Location' ? 'New York, NY' : field.label}`}
                                 required={field.required}
                             />
                         </div>
                     )
                 })}
-            </div>
+            </div>0779658784
         </div>
     )
 
