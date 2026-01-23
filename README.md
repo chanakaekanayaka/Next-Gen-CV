@@ -8,6 +8,13 @@
 
 ---
 
+## 👤 Author
+
+**Chanaka Ekanayaka**
+* **Live Link:** [https://next-gen-cv-cmwu-f.vercel.app/](https://next-gen-cv-cmwu-f.vercel.app/)
+* **GitHub:** [@chanakaekanayaka](https://github.com/chanakaekanayaka)
+---
+
 ## 📸 Project Gallery
 
 | Home Page | Dashboard |
@@ -83,14 +90,8 @@ The application uses **React** for the frontend, communicating via **Axios** wit
 
 ---
 
-## 👤 Author
 
-**Chanaka Ekanayaka**
-* **GitHub:** [@chanakaekanayaka](https://github.com/chanakaekanayaka)
-* **Project Link:** [https://next-gen-cv-cmwu-f.vercel.app/](https://next-gen-cv-cmwu-f.vercel.app/)
 
----
 
-## 📄 License
 
-Distributed under the MIT License.
+
